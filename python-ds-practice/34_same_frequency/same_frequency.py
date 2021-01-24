@@ -10,3 +10,9 @@ def same_frequency(num1, num2):
         >>> same_frequency(1212, 2211)
         True
     """
+    return {char:str(num1).count(char) for char in str(num1)} == {char:str(num2).count(char) for char in str(num2)}
+
+print(same_frequency(551122, 221515))
+print(same_frequency(321142, 3212215))
+print(same_frequency(1212, 2211))
+print(same_frequency(1212, 22111))

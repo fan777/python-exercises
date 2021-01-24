@@ -16,3 +16,4 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+    return not list(set(a[2]) & set(b[2])) == []

@@ -7,3 +7,8 @@ def reverse_string(phrase):
         >>> reverse_string('sauce')
         'ecuas'
     """
+    # reverse_phrase = list(phrase)[::-1]
+    # return ''.join(reverse_phrase)
+    return phrase[::-1]
+
+print('should return god: ', reverse_string('dog'))

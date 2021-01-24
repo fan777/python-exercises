@@ -7,3 +7,6 @@ def last_element(lst):
         >>> last_element([]) is None
         True
     """
+    return lst[-1]
+
+print('should return dog:', last_element(['cat','parrot','dog']))

@@ -18,3 +18,15 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+    sum = 0
+    for idx, lst in enumerate(matrix):
+      sum += lst[idx] + lst[-1-idx]
+    return sum
+
+m1 = [[1, 2],[30, 40],]
+m2 = [[1, 2, 3],[4, 5, 6],[7, 8, 9],]
+m3 = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+
+print(sum_up_diagonals(m1))
+print(sum_up_diagonals(m2))
+print(sum_up_diagonals(m3))

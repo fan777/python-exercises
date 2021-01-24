@@ -19,3 +19,9 @@ def reverse_vowels(s):
     reverse_vowels("why try, shy fly?")
     'why try, shy fly?''
     """
+
+print(reverse_vowels("Hello!"))
+print(reverse_vowels("Tomatoes"))
+print(reverse_vowels("Reverse Vowels In A String"))
+print(reverse_vowels("aeiou"))
+print(reverse_vowels("why try, shy fly?"))

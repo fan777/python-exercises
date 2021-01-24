@@ -19,3 +19,18 @@ def find_greater_numbers(nums):
         >>> find_greater_numbers([])
         0
     """
+    counter = 0
+
+    while len(nums) > 1:
+      for idx, val in enumerate(nums):
+        if (idx+1) >= len(nums):
+          break
+        if val < nums[idx+1]:
+          counter += 1
+      nums.pop(0)  
+    return counter
+
+print(find_greater_numbers([1, 2, 3]))
+print(find_greater_numbers([6, 1, 2, 7]))
+print(find_greater_numbers([5, 4, 3, 2, 1]))
+print(find_greater_numbers([]))
